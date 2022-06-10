@@ -29,8 +29,8 @@ def sample():
     # TM.SetIO(0,TM.HIGH)
     # TM.Move_TM(init[0], init[1] , init[2], init[3], init[4], init[5],Move_type='PTP_J',Speed=3.0,blend_Mode = True)
     
-    init = [302.228,504.204,64.892,-180,0,90]
-    init2 = [302.226,204.198,64.892,-180,0,90]
+    init = [162.14,435.47,321.36,178.20,2.61,162.09]
+    init2 = [-157.09,435.93,317.14,179.01,2.37,162.09]
 
 
     TM.Move_TM(init[0], init[1] , init[2], init[3], init[4], init[5],Move_type='PTP_T',Speed=100.0,blend_Mode = True)
