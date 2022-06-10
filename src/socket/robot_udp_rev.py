@@ -3,7 +3,7 @@ import struct
 import numpy as np
 
 UDP_IP = "192.168.1.71"
-UDP_PORT = 8787
+UDP_PORT = 8777
 
 sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM) # UDP
 sock.bind((UDP_IP, UDP_PORT))

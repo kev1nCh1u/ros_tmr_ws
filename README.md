@@ -30,6 +30,8 @@ run tm robot
 
     roslaunch tm5_900_moveit_config tm5_900_moveit_planning_execution.launch sim:=False robot_ip:=192.168.0.10
 
+    roslaunch tm5_700_moveit_config tm5_700_moveit_planning_execution.launch sim:=False robot_ip:=192.168.10.2
+
     rosrun tm_driver tm_driver <robot_ip_address>
 
     rosrun ui_for_debug_and_demo robot_ui
@@ -38,4 +40,8 @@ run arm control
 
     rosrun arm_control RobotCtrl.py
 
-    python src/arm_control/src/RobotCtrl.py
+    python2 src/arm_control/src/RobotCtrl.py
+
+run arm control udp
+    python2 src/arm_control/src/RobotCtrl_udp.py
+    python2 src/socket/robot_udp_send.py
