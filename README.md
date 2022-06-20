@@ -21,7 +21,10 @@ arm control install
 
     sudo apt install python-is-python3
 
-
+## start
+    roslaunch tm5_700_moveit_config tm5_700_moveit_planning_execution.launch sim:=False robot_ip:=192.168.10.2
+    python2 src/arm_control/src/RobotCtrl_udp.py
+    
 ## run
 
 run tm robot
