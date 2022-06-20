@@ -46,5 +46,7 @@ run arm control
     python2 src/arm_control/src/RobotCtrl.py
 
 run arm control udp
+
+    roslaunch tm5_700_moveit_config tm5_700_moveit_planning_execution.launch sim:=False robot_ip:=192.168.10.2
     python2 src/arm_control/src/RobotCtrl_udp.py
     python2 src/socket/robot_udp_send.py
