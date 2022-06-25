@@ -22,6 +22,11 @@ arm control install
     sudo apt install python-is-python3
 
 ## start
+    kevin_robot_connect.bash
+    kevin_robot_control.bash
+
+## start
+    source devel/setup.bash
     roslaunch tm5_700_moveit_config tm5_700_moveit_planning_execution.launch sim:=False robot_ip:=192.168.10.2
     python2 src/arm_control/src/RobotCtrl_udp.py
     

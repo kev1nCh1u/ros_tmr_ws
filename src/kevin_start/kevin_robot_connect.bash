@@ -16,4 +16,4 @@ echo -e "ws_path:" $ws_path "\n" # 列印路徑
 cd $ws_path
 source devel/setup.bash
 
-python2 src/arm_control/src/RobotCtrl_udp.py
+roslaunch tm5_700_moveit_config tm5_700_moveit_planning_execution.launch sim:=False robot_ip:=192.168.10.2
