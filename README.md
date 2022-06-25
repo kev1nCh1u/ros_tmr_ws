@@ -8,8 +8,11 @@
 |_|\_\___| \_/ |_|_| |_|\____|_| |_|_|\__,_|
                                             
 ```
+## Quick start
+    kevin_robot_connect.bash
+    kevin_robot_control.bash
 
-## intall
+## Intall
 tm_robot install
 
 https://github.com/TechmanRobotInc/tmr_ros1/tree/noetic
@@ -21,16 +24,12 @@ arm control install
 
     sudo apt install python-is-python3
 
-## start
-    kevin_robot_connect.bash
-    kevin_robot_control.bash
-
-## start
+## Start
     source devel/setup.bash
     roslaunch tm5_700_moveit_config tm5_700_moveit_planning_execution.launch sim:=False robot_ip:=192.168.10.2
     python2 src/arm_control/src/RobotCtrl_udp.py
     
-## run
+## Run
 
 run tm robot
 
